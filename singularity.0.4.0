@@ -1,7 +1,7 @@
 Bootstrap: docker
 
 #From: continuumio/anaconda3:2019.03
-From: continuumio/anaconda3:2020.02
+From: continuumio/anaconda3:2020.11
 
 %post
 export PATH=/opt/conda/bin:$PATH
@@ -12,7 +12,10 @@ apt-get install -y tree
 pip install --upgrade pip
 
 
-git clone https://github.com/Project-MONAI/MONAI.git
-cd MONAI/
-git checkout 0.3.0
-pip install -e '.[all]'
+#git clone https://github.com/Project-MONAI/MONAI.git
+#cd MONAI/
+#git checkout 0.3.0
+#pip install -e '.[all]'
+
+pip install monai
+
