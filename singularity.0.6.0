@@ -13,10 +13,5 @@ apt-get install -y build-essential
 pip install --upgrade pip
 
 
-#git clone https://github.com/Project-MONAI/MONAI.git
-#cd MONAI/
-#git checkout 0.3.0
-#pip install -e '.[all]'
-
-pip install monai[all]==0.5.1
+pip install monai[all]==0.6.0
 
